@@ -1,0 +1,533 @@
+.container {
+  width: 100%;
+  height: 669px;
+  background-color: #e9e9e9;
+  position: relative;
+}
+
+.container .topBar,
+.container .menuBar,
+.container .mainBar,
+.container .postBar {
+  -webkit-box-shadow: 10px 10px 20px rgba(43, 43, 43, 0.09), -10px -10px 20px rgba(255, 255, 255, 0.57);
+  box-shadow: 10px 10px 20px rgba(43, 43, 43, 0.09), -10px -10px 20px rgba(255, 255, 255, 0.57);
+  border-radius: 35px;
+  background: #e9e9e9;
+  position: absolute;
+}
+
+.container .topBar {
+  width: 96%;
+  height: 60px;
+  top: 10px;
+  border-radius: 20px;
+  left: 2%;
+  right: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.container .topBar .titleBar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 2%;
+}
+
+.container .topBar .titleBar .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+}
+
+.container .topBar .titleBar .title {
+  font-family: "Poppins";
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.container .topBar .btnBar {
+  width: 120px;
+  height: 35px;
+  position: absolute;
+  right: 2%;
+  border: none;
+  font-family: "Poppins";
+  outline: none;
+  background-color: #7207ff;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+  box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+}
+
+.container .topBar .btnBar:active {
+  -webkit-box-shadow: 6px 6px 12px rgba(43, 43, 43, 0.09), -6px -6px 12px rgba(255, 255, 255, 0.57);
+  box-shadow: 6px 6px 12px rgba(43, 43, 43, 0.09), -6px -6px 12px rgba(255, 255, 255, 0.57);
+}
+
+.container .menuBar {
+  width: 18%;
+  height: 84%;
+  bottom: 15px;
+  left: 2%;
+  overflow: hidden;
+}
+
+.container .menuBar .menuTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 18%;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+}
+
+.container .menuBar .listBar {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+}
+
+.container .menuBar .listBar .listCont {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 35%;
+  cursor: pointer;
+}
+
+.container .menuBar .listBar .listCont.listCont:nth-child(1) {
+  margin-top: 0;
+}
+
+.container .menuBar .listBar .listCont .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.container .menuBar .listBar .listCont p {
+  color: #434d5f;
+  margin-left: 40px;
+}
+
+.container .mainBar {
+  width: 76.5%;
+  height: 84%;
+  bottom: 15px;
+  right: 2%;
+}
+
+.container .mainBar .titleBar {
+  width: 70%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.container .mainBar .titleBar span {
+  margin-right: 10px;
+  color: #7207ff;
+}
+
+.container .mainBar .postBar {
+  width: 96%;
+  height: 80%;
+  bottom: 15px;
+  right: 2%;
+  left: 2%;
+  border-radius: 30px;
+  overflow-y: hidden;
+  -webkit-box-shadow: inset 6px 6px 12px rgba(43, 43, 43, 0.09), inset -6px -6px 12px rgba(255, 255, 255, 0.57);
+  box-shadow: inset 6px 6px 12px rgba(43, 43, 43, 0.09), inset -6px -6px 12px rgba(255, 255, 255, 0.57);
+}
+
+.container .mainBar .postBar .postBarInner {
+  width: 100%;
+  height: 90%;
+}
+
+.container .mainBar .postBar .postBarInner .postList {
+  width: 100%;
+  height: 75%;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .mainBar .postBar .postBarInner .postList .postWrapper {
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.container .mainBar .postBar .postBarInner .postList .postWrapper .postTitle {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px;
+  text-transform: capitalize;
+}
+
+.container .mainBar .postBar .postBarInner .postList .postWrapper .btn {
+  width: 120px;
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #7207ff;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+  box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+}
+
+.container .mainBar .postBar .postBarInner .postList::-webkit-scrollbar {
+  display: none;
+}
+
+.container .mainBar .postBar .postBarInner .postList .postTitle {
+  width: 90%;
+  cursor: pointer;
+  margin: 20px 0;
+  height: 50px;
+  margin-left: 40px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.container .mainBar .postBar .postBarInner .btnCont {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.container .mainBar .postBar .postBarInner .btnCont .btn {
+  position: relative;
+  right: 30px;
+  margin: 0 20px;
+  width: 120px;
+  height: 95%;
+  border: none;
+  outline: none;
+  background-color: #7207ff;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+  box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+}
+
+.container .mainBar .postBar .postBarInner .btnCont .btn:active {
+  -webkit-box-shadow: 6px 6px 12px rgba(43, 43, 43, 0.09), -6px -6px 12px rgba(255, 255, 255, 0.57);
+  box-shadow: 6px 6px 12px rgba(43, 43, 43, 0.09), -6px -6px 12px rgba(255, 255, 255, 0.57);
+}
+
+.postBarInner {
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  background-color: #e9e9e9;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.postBarInner .titleText {
+  width: 100%;
+  height: 50px;
+  color: black;
+  text-transform: capitalize;
+  font-family: 'Poppins';
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 10px;
+}
+
+.postBarInner .formWrapper {
+  width: 100%;
+  height: 400px;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.postBarInner .formWrapper .input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  font-family: 'Poppins';
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 20px 0;
+}
+
+.postBarInner .formWrapper .file {
+  padding: 30px 0;
+  margin: 10px;
+}
+
+.postBarInner .formWrapper .galleryCont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.postBarInner .formWrapper .galleryCont .file {
+  padding: 30px 0;
+  margin: 10px;
+}
+
+.postBarInner .formWrapper .textarea {
+  height: 100px;
+}
+
+.postBarInner .btnWrapper {
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.postBarInner .btnWrapper .btn {
+  margin: 0 20px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: #7207ff;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  -webkit-box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+  box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+}
+
+.postBarInner .btnWrapper .btn:active {
+  -webkit-box-shadow: 6px 6px 12px rgba(43, 43, 43, 0.09), -6px -6px 12px rgba(255, 255, 255, 0.57);
+  box-shadow: 6px 6px 12px rgba(43, 43, 43, 0.09), -6px -6px 12px rgba(255, 255, 255, 0.57);
+}
+/*# sourceMappingURL=dashboard.css.map */

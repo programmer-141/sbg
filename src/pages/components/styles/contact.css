@@ -1,0 +1,243 @@
+.contactContainer {
+  width: 100%;
+  height: 615.48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 55px;
+}
+
+.contactContainer .contactWrapper {
+  width: 95%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.452);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 10px 10px 20px #c5c1c1;
+          box-shadow: 10px 10px 20px #c5c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactContainer .contactWrapper .section1,
+.contactContainer .contactWrapper .section2 {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.contactContainer .contactWrapper .section2 {
+  overflow-y: scroll;
+}
+
+.contactContainer .contactWrapper .section2 .title {
+  font-family: "Poppins";
+  font-size: 25px;
+  margin: 20px 0;
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+.contactContainer .contactWrapper .section2 .form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.contactContainer .contactWrapper .section2 .form .input {
+  margin: 20px;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.452);
+  height: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: "Poppins";
+  font-size: 13px;
+  border: 1px solid lightgray;
+}
+
+.contactContainer .contactWrapper .section2 .form .input:last-child {
+  height: 60px;
+}
+
+.contactContainer .contactWrapper .section2 .btnCont {
+  width: 100;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.contactContainer .contactWrapper .section2 .btnCont .btn {
+  width: 130px;
+  height: 100%;
+  border: none;
+  font-family: 'Poppins';
+  color: white;
+  outline: none;
+  background-color: #0e162e;
+  font-weight: 600;
+  border-radius: 3px;
+  font-size: 14px;
+  -webkit-box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+  box-shadow: 5px 5px 10px rgba(109, 106, 106, 0.452);
+}
+
+.contactContainer .contactWrapper .section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+  background: url("../assets/contactBg.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.contactContainer .contactWrapper .section1 .container {
+  width: 60%;
+  height: 70%;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 3;
+}
+
+.contactContainer .contactWrapper .section1 .container br {
+  margin: 20px 0;
+}
+
+.contactContainer .contactWrapper .section1 .container h2 {
+  color: white;
+  margin: 20px 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid orange;
+}
+
+.contactContainer .contactWrapper .section1 .container h4 {
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contactContainer .contactWrapper .section1 .container h4 .icon {
+  margin-right: 7px;
+  color: orange;
+}
+
+.contactContainer .contactWrapper .section1 .container h5 {
+  color: white;
+  font-size: 14px;
+  margin-left: 31px;
+  margin-top: 5px;
+}
+
+.contactContainer .contactWrapper .section1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.705);
+  z-index: 2;
+}
+/*# sourceMappingURL=contact.css.map */
